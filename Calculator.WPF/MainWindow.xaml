@@ -5,8 +5,40 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Calculator.WPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="Calculator" Height="340" Width="280">
+    <Grid HorizontalAlignment="Center" Width="400" RenderTransformOrigin="0.5,0.463">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="18*"/>
+            <ColumnDefinition Width="82*"/>
+            <ColumnDefinition Width="11*"/>
+            <ColumnDefinition Width="131*"/>
+            <ColumnDefinition Width="17*"/>
+            <ColumnDefinition Width="17*"/>
+            <ColumnDefinition Width="123*"/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <Button Content="%" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="66" RenderTransformOrigin="0,0.485" Margin="49,49,0,0" Grid.Column="2" Grid.ColumnSpan="3"/>
+        <TextBox HorizontalAlignment="Left" Height="47" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="262" Grid.ColumnSpan="6" Grid.Column="2" Margin="50,1,0,0"/>
+        <Button Content="CE" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="66" RenderTransformOrigin="0,0.485" Margin="22,49,0,0" Grid.Column="4"/>
+        <Button Content="C" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="66" RenderTransformOrigin="0,0.485" Margin="88,49,0,0" Click="Button_Click" Grid.Column="4" Grid.ColumnSpan="3"/>
+        <Button Content="Back" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="66" RenderTransformOrigin="0,0.485" Margin="6,49,0,0" Click="Button_Click" Grid.Column="6" Grid.ColumnSpan="2"/>
+        <Button Content="7" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="66" RenderTransformOrigin="0,0.485" Margin="49,99,0,0" Grid.Column="2" Grid.ColumnSpan="3"/>
+        <Button Content="8" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="66" RenderTransformOrigin="0,0.485" Margin="22,99,0,0" Grid.Column="4"/>
+        <Button Content="9" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="66" RenderTransformOrigin="0,0.485" Margin="88,99,0,0" Click="Button_Click" Grid.Column="4" Grid.ColumnSpan="3"/>
+        <Button Content="X" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="66" RenderTransformOrigin="0,0.485" Margin="6,99,0,0" Click="Button_Click" Grid.Column="6" Grid.ColumnSpan="2"/>
+        <Button Content="4" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="66" RenderTransformOrigin="0,0.485" Margin="49,149,0,0" Grid.Column="2" Grid.ColumnSpan="3"/>
+        <Button Content="5" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="66" RenderTransformOrigin="0,0.485" Margin="22,149,0,0" Grid.Column="4"/>
+        <Button Content="6" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="66" RenderTransformOrigin="0,0.485" Margin="88,149,0,0" Click="Button_Click" Grid.Column="4" Grid.ColumnSpan="3"/>
+        <Button Content="-" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="66" RenderTransformOrigin="0,0.485" Margin="6,149,0,0" Click="Button_Click" Grid.Column="6" Grid.ColumnSpan="2"/>
+        <Button Content="1" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="66" RenderTransformOrigin="0,0.485" Margin="49,199,0,0" Grid.Column="2" Grid.ColumnSpan="3"/>
+        <Button Content="2" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="66" RenderTransformOrigin="0,0.485" Margin="22,199,0,0" Grid.Column="4"/>
+        <Button Content="3" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="66" RenderTransformOrigin="0,0.485" Margin="88,199,0,0" Click="Button_Click" Grid.Column="4" Grid.ColumnSpan="3"/>
+        <Button Content="+" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="66" RenderTransformOrigin="0,0.485" Margin="6,199,0,0" Click="Button_Click" Grid.Column="6" Grid.ColumnSpan="2"/>
+        <Button Content="," HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="66" RenderTransformOrigin="0,0.485" Margin="49,249,0,0" Grid.Column="2" Grid.ColumnSpan="3"/>
+        <Button Content="0" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="66" RenderTransformOrigin="0,0.485" Margin="22,249,0,0" Grid.Column="4"/>
+        <Button Content="/" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="66" RenderTransformOrigin="0,0.485" Margin="88,249,0,0" Click="Button_Click" Grid.Column="4" Grid.ColumnSpan="3"/>
+        <Button Content="=" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="66" RenderTransformOrigin="0,0.485" Margin="6,249,0,0" Click="Button_Click" Grid.Column="6" Grid.ColumnSpan="2"/>
 
     </Grid>
 </Window>
